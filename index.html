@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wether app</title>
+  </head>
+  <body>
+    <section class="wetter-app">
+      <div class="links">
+        <h1 id="day"></h1>
+        <p class="next-day" id="present-date"></p>
+        <div class="location">
+          <i class="fa-solid fa-location-dot"></i>
+          <p id="location"></p>
+        </div>
+        <p id="time"></p>
+        <p id="icon">☀️</p>
+        <p class="degre" id="degre">6 c</p>
+        <p id="description">Sunny</p>
+      </div>
+      <div class="recht">
+        <div class="pricipitation info">
+          <p>visibility</p>
+          <p class="info1" id="visisbility">km/h</p>
+        </div>
+
+        <div class="humidity info">
+          <p>Humidity</p>
+          <p class="info1" id="humidity">0%</p>
+        </div>
+        <div class="wind info">
+          <p>Wind</p>
+          <p class="info1" id="wind">0 Km/h</p>
+        </div>
+        <div class="next-days">
+          <div class="days" id="day1">
+            <p id="icon-presnt-day">☀️</p>
+            <p class="next-day" id="present-day">Mon</p>
+            <p class="degres" id="degre-present-day">29 c</p>
+          </div>
+          <div class="days">
+            <p id="icon-day2">☀️</p>
+            <p class="next-day" id="day2">Mon</p>
+            <p class="degres" id="degre-day2">29c</p>
+          </div>
+          <div class="days">
+            <p id="icon-day3">☀️</p>
+            <p class="next-day" id="day3">Mon</p>
+            <p class="degres" id="degre-day3">29c</p>
+          </div>
+          <div class="days">
+            <p id="icon-day4">☀️</p>
+            <p class="next-day" id="day4">Mon</p>
+            <p class="degres" id="degre-day4">29c</p>
+          </div>
+        </div>
+        <button class="location-button">
+          <i class="fa-solid fa-location-dot"></i> Change location
+        </button>
+      </div>
+      <div class="div-designe">
+        <div class="contry-change">
+          <input
+            type="text"
+            name=""
+            id="input-contry"
+            placeholder="choose a contry"
+          />
+          <input type="button" value="Senden" id="submit" />
+        </div>
+      </div>
+    </section>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,190 @@
+@font-face {
+  font-family: montsrat;
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: montsrat;
+}
+.wetter-app {
+  background-color: #323b48;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+.links {
+  width: 230px;
+  height: 380px;
+  padding: 20px 10px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  background-image: url(../img/64921006_382225799083328_704974098331193300_n.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+  transition: transform 300ms ease;
+  transform: translateZ(0) scale(1.02) perspective(1000px);
+  float: left;
+}
+.links:hover {
+  transform: scale(1.1) perspective(1500px) rotateY(10deg);
+}
+#day {
+  font-size: 2.5rem;
+}
+.next-day {
+  font-size: 1.5rem;
+  margin: 5px 0 10px 0;
+}
+.location {
+  display: flex;
+  gap: 3px;
+}
+i {
+  font-size: 1.5rem;
+}
+#location {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+#icon {
+  font-size: 8rem;
+  margin-top: 70px;
+}
+.weatherIcons {
+  font-size: 4rem;
+}
+#icons {
+  font-size: 1rem;
+}
+.degre {
+  font-size: 5.5rem;
+}
+#description {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.recht {
+  width: 400px;
+  height: 380px;
+  background-color: #2228317c;
+  border-radius: 20px;
+  padding: 20px 45px;
+  margin-left: -15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.info {
+  display: flex;
+  position: relative;
+}
+.info p:first-of-type {
+  font-size: 2rem;
+  margin-top: -5px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+.info1 {
+  position: absolute;
+  right: 10px;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+.next-days {
+  display: flex;
+  margin-top: 25px;
+}
+.days {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 80px;
+  height: 140px;
+  transition: transform 300ms ease;
+  transform: translateZ(0) scale(1.02) perspective(1000px);
+}
+.days:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background: #fff;
+  color: #222831;
+  box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2);
+}
+.days:first-of-type {
+  background-color: white;
+  color: black;
+}
+.degres {
+  font-size: 2rem;
+}
+.location-button {
+  padding: 10px;
+  border-radius: 40px;
+  background: rgb(113, 228, 242);
+  background: linear-gradient(
+    90deg,
+    rgba(113, 228, 242, 1) 21%,
+    rgba(93, 123, 233, 1) 87%
+  );
+  border: none;
+}
+.div-designe {
+  position: absolute;
+  z-index: 1;
+  /* background-color: rgba(0, 0, 0, 0.491);
+  border-radius: 20px; */
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.21);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.6px);
+  -webkit-backdrop-filter: blur(5.6px);
+  border: 1px solid rgba(255, 255, 255, 0);
+  width: 622px;
+  height: 387px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+.contry-change {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-image: url(../img/images.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 270px;
+  height: 172px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+input {
+  border-radius: 10px;
+  padding: 5px 10px;
+  border: none;
+  width: 150px;
+}
