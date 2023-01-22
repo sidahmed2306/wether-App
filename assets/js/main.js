@@ -85,7 +85,7 @@ let wether = {
   fetchData: function () {
     console.log(citys);
     fetch(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${citys}&appid=485d545523b87a052f1ed53978add831`
+      `https://api.openweathermap.org/geo/1.0/direct?q=${citys}&appid=485d545523b87a052f1ed53978add831`
     )
       .then((response) => response.json())
       .then((locat) => {
@@ -94,7 +94,7 @@ let wether = {
         console.log(lat);
         console.log(lon);
         fetch(
-          `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${wether.apiKey}&units=metric`
+          `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${wether.apiKey}&units=metric`
         )
           .then((response) => response.json())
           .then((data) => wether.wetherApp(data));
