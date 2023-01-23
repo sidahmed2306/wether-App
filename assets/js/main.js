@@ -127,16 +127,22 @@ let wether = {
     let descrip = data.list[0].weather[0].main;
     if (descrip == "Rain") {
       descriptions.innerHTML = `Rainy`;
-      divLinks.style.backgroundImage = "url('/assets/img/maxresdefault.jpeg')";
-      wetterApp.style.backgroundImage = "url('/assets/img/maxresdefault.jpeg')";
+      divLinks.style.backgroundImage =
+        "url('/wether-App/assets/img/maxresdefault.jpeg')";
+      wetterApp.style.backgroundImage =
+        "url('/wether-App/assets/img/maxresdefault.jpeg')";
     } else if (descrip == "Clouds") {
       descriptions.innerHTML = `Cloudy`;
-      divLinks.style.backgroundImage = "url('/assets/img/1462183.webp')";
-      wetterApp.style.backgroundImage = "url('/assets/img/1462183.webp')";
+      divLinks.style.backgroundImage =
+        "url('/wether-App/assets/img/1462183.webp')";
+      wetterApp.style.backgroundImage =
+        "url('/wether-App/assets/img/1462183.webp')";
     } else if (descrip == "Clear") {
       descriptions.innerHTML = `Sunny`;
-      divLinks.style.backgroundImage = "url('/assets/img/3265126.jpeg')";
-      wetterApp.style.backgroundImage = "url('/assets/img/3265126.jpeg')";
+      divLinks.style.backgroundImage =
+        "url('/wether-App/assets/img/3265126.jpeg')";
+      wetterApp.style.backgroundImage =
+        "url('/wether-App/assets/img/3265126.jpeg')";
     }
     let visb = data.list[0].visibility / 1000;
     console.log(visb);
